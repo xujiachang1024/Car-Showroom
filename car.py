@@ -22,3 +22,8 @@ class Car(object):
 
     def getPrice(self):
         return self.__price
+
+    def __eq__(self, car):
+        return  self.__make == car.getMake() and
+                self.__year == car.getYear() and
+                sefl.__price == car.getPrice()
